@@ -23,7 +23,7 @@
                     <div class="navbar-toggle-item">
                         <div class="d-flex gap-5 flex-column flex-lg-row text-lg-start text-center align-items-start align-items-lg-center justify-content-center justify-content-between mt-5 mt-lg-0">
                             <div class="navbar-brand logo d-none d-lg-flex">
-                                <a href="index.html">
+                                <a href="{% url 'index' %}">
                                     <h4 class="fw_600 n0-color">
                                         Bento<span class="s1-color">X</span>
                                     </h4>
@@ -41,23 +41,23 @@
                                     </a>
                                 </li>
                                 <li class="menu-item position-relative">
-                                    <a href="project.html">
+                                    <a href="{% url 'project' %}">
                                         Works
                                     </a>
                                 </li>
                                 <li class="menu-item position-relative">
-                                    <a href="contact.html">
+                                    <a href="{% url 'contact' %}">
                                         Contact
                                     </a>
                                 </li>
                                 <li class="menu-item position-relative d-lg-none">
-                                    <a href="error.html">
+                                    <a href="{% url 'error' %}">
                                         404 
                                     </a>
                                 </li>
                             </ul>
                             <div class="d-flex justify-content-center  m-auto m-lg-0 justify-content-lg-end">
-                                <a href="contact.html" class="kewta-btn d-flex align-items-center">
+                                <a href="{% url 'contact' %}" class="kewta-btn d-flex align-items-center">
                                     <span class="kew-text">
                                         Let’s Talk
                                     </span>

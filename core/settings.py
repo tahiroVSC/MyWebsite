@@ -43,7 +43,12 @@ INSTALLED_APPS = [
 
     #apps
     'apps.base',
-    'apps.about'
+    'apps.about',
+    'apps.article',
+    'apps.contact',
+    'apps.error',
+    'apps.offering',
+    'apps.project',
 ]
 
 MIDDLEWARE = [

@@ -78,7 +78,7 @@
         <!--Section Title-->
         <div class="container position-relative cus-z1 d-flex justify-content-center justify-content-lg-start mb-xxl-15 mb-xl-8 mb-7">
             <div class="backmenu-head">
-                <a href="index.html" class="fw_400 fs-seven n0-color text-uppercase golelayla-logo">
+                <a href="{% url 'index' %}" class="fw_400 fs-seven n0-color text-uppercase golelayla-logo">
                     <svg width="20" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.57 5.92969L3.5 11.9997L9.57 18.0697" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M20.5019 12H3.67188" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -98,7 +98,7 @@
                     <div class="col-lg-4 col-md-5 col-sm-8" data-aos="zoom-in-up" data-aos-duration="1000">
                         <div class="cmn-box py-xxl-9 py-xl-9 py-lg-9 py-5 px-xxl-8 px-xl-6 px-lg-4 px-6" data-aos="zoom-in-down" data-aos-duration="2000">
                             <div class="layla-thumb position-relative about-layla m-auto text-center">
-                                <img src="{{about.image}}" alt="img" class="radius100">
+                                <img src="{{about.image.url}}" alt="img" class="radius100">
                                 <div class="layla-resize">
                                     <img src="{% static 'assets/images/global/img-resize.png' %}" alt="img">
                                 </div>
@@ -111,13 +111,13 @@
                             <div class="layla-infoabout text-center">
                                 <h4 class="text-white mb-md-6 mb-4 fw_500">
                                     <span class="d-block">Hello,</span>
-                                    I’m Gole Layla, an Award-Winning
+                                    {{about.name}}
                                     <span class="d-block">
-                                        Product Designer.
+                                        {{index.title}} Developer
                                     </span>
                                 </h4>
                                 <p>
-                                    As a skilled Product designer, illustrator, and visual development expert, my diverse background has allowed me to apply my talents across different fields and industries, demonstrating adaptability and versatility.
+                                    {{about.description}}
                                 </p>
                             </div>
                        </div>
@@ -245,7 +245,7 @@
                         <div class="cmn-box h-100 about-countexprience-wrap py-xxl-8 py-xl-8 py-lg-8 py-5 px-xxl-8 px-xl-6 px-lg-4 px-6">
                             <div class="expri-items-box about-items-counter">
                                 <h2 class="fw_600 n0-color mb-2">
-                                    07+
+                                    {{about.experience}}+
                                 </h2>
                                 <span class="expri-clr text-uppercase n00-color fw_300 fs-six">
                                     YEARS OF EXPERIENCE
@@ -253,7 +253,7 @@
                             </div>
                             <div class="expri-items-box about-items-counter">
                                 <h2 class="fw_600 n0-color mb-2">
-                                   +125
+                                   {{about.project}}+
                                 </h2>
                                 <span class="expri-clr text-uppercase n00-color fw_300 fs-six">
                                     TOTAL PROJECTS
@@ -261,15 +261,15 @@
                             </div>
                             <div class="expri-items-box about-items-counter">
                                 <h2 class="fw_600 n0-color mb-2">
-                                    09
+                                    {{about.happyclient}}+
                                 </h2>
                                 <span class="expri-clr text-uppercase n00-color fw_300 fs-six">
-                                    RECOGNITIONS
+                                    HAPPY CLIENTS
                                 </span>
                             </div>
                             <div class="expri-items-box about-items-counter">
                                 <h2 class="fw_600 n0-color mb-2">
-                                    00
+                                    {{about.unhappyclient}}
                                 </h2>
                                 <span class="expri-clr text-uppercase n00-color fw_300 fs-six">
                                     UNHAPPY CLIENTS
@@ -309,10 +309,10 @@
                                 </li>
                             </ul>
                             <div class="stay mt-xxl-5 mt-xl-5 mt-lg-10 mt-12">
-                                <a href="about.html" class="d-flex stay-with justify-content-start n06">
+                                <a href="{% url 'about' %}" class="d-flex stay-with justify-content-start n06">
                                     Stay With Me
                                 </a>
-                                <a href="about.html" class="d-flex mt-2 cmn-footarrow align-items-center justify-content-between">
+                                <a href="{% url 'about' %}" class="d-flex mt-2 cmn-footarrow align-items-center justify-content-between">
                                     <span class="fw_500 fs-seven n0-color fs-seven fw_300">
                                         Profiles
                                     </span>
@@ -359,7 +359,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 position-relative cus-z1" data-aos="zoom-in-down" data-aos-duration="1400">
-                        <a href="contact.html" class="common-serbox position-relative cus-z1 d-flex align-items-center justify-content-center h-100 d-block cmn-box py-xl-8 py-4 px-xxl-6 px-xxl-6 px-lg-4 px-4">
+                        <a href="{% url 'contact' %}" class="common-serbox position-relative cus-z1 d-flex align-items-center justify-content-center h-100 d-block cmn-box py-xl-8 py-4 px-xxl-6 px-xxl-6 px-lg-4 px-4">
                             <span>
                                 <span class="d-block mb-109 fw_500 fs-five n0-color work-respon">
                                     Let’s Works Together...!

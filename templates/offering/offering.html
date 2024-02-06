@@ -1,3 +1,4 @@
+{%load static%}
 <!doctype html>
 <html lang="en">
 
@@ -14,15 +15,15 @@
     <!-- ==== #Title ==== -->
     <title>BentoX - Grid System Unique Protfolio HTML Template</title>
     <!-- ==== #Favicon ==== -->
-    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'assets/images/fav.png' %}" type="image/x-icon">
 
 
     <!-- ==== #aos animation ==== -->
-    <link rel="stylesheet" href="assets/css/plugins/aos.css">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/aos.css' %}">
     <!-- ==== #Iconsax ==== -->
     <link href="https://iconsax.gitlab.io/i/icons.css" rel="stylesheet">
     <!-- ==== #style.min ==== -->
-    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/style.min.css' %}">
 </head>
 
 <body class="position-relative">
@@ -49,7 +50,7 @@
         <!-- ==== Dark Light Rtl Ltr Included ==== -->
         <div class="tigger-arrow">
             <div class="gear-icon">
-                <img src="assets/images/gear.png" alt="img">
+                <img src="{% static 'assets/images/gear.png' %}" alt="img">
             </div>
             <div class="tigger-property d-flex align-items-center pt-3 pb-3 px-6">
                 <div class="box">
@@ -71,99 +72,7 @@
         <!-- ==== Dark Light Rtl Ltr Included ==== -->
 
         <!--Header Here-->
-        <header class="header-section mb-xxl-15 mb-xl-8 mb-7 mt-xxl-15 mt-xl-8 mt-7 header-sectionone">
-            <div class="one__header ">
-                <div class="container">
-                    <div class="main-navbar" data-aos="fade-up" data-aos-duration="1000">
-                        <nav class="navbar-custom">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <a href="index.html" class="nav-brand d-block d-lg-none">
-                                    <h4 class="fw_500 n0-color golelayla-logo">
-                                        Bento<span class="s1-color">X</span>
-                                    </h4>
-                                </a>
-                                <div class="d-flex gap-6">
-                                    <div class="switch-wrapper-top d-flex d-lg-none"></div>
-                                    <button class="navbar-toggle-btn d-block d-lg-none" type="button">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="navbar-toggle-item">
-                                <div class="d-flex gap-5 flex-column flex-lg-row text-lg-start text-center align-items-start align-items-lg-center justify-content-center justify-content-between mt-5 mt-lg-0">
-                                    <div class="navbar-brand logo d-none d-lg-flex">
-                                        <a href="index.html">
-                                            <h4 class="fw_600 n0-color">
-                                                Bento<span class="s1-color">X</span>
-                                            </h4>
-                                        </a>
-                                    </div>
-                                    <ul class="custom-nav d-grid d-lg-flex gap-5 gap-lg-8 gap-xl-10 justify-content-lg-start">
-                                        <li class="menu-item position-relative">
-                                            <a href="#0">
-                                                Home <i class="fas fa-chevron-down"></i>
-                                            </a>
-                                            <ul class="sub-menu home-scroolls box-shadow3">
-                                                <li class="menu-link pt-3">
-                                                    <a href="index.html">Home One</a>
-                                                </li>
-                                                <li class="menu-link pt-1">
-                                                    <a href="index-2.html">Home Two</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item position-relative">
-                                            <a href="about.html">
-                                                About
-                                            </a>
-                                        </li>
-                                        <li class="menu-item position-relative">
-                                            <a href="project.html">
-                                                Works
-                                            </a>
-                                        </li>
-                                        <li class="menu-item position-relative">
-                                            <a href="contact.html">
-                                                Contact
-                                            </a>
-                                        </li>
-                                        <li class="menu-item position-relative d-lg-none">
-                                            <a href="error.html">
-                                                404 
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <div class="d-flex justify-content-center  m-auto m-lg-0 justify-content-lg-end">
-                                        <a href="contact.html" class="kewta-btn d-flex align-items-center">
-                                            <span class="kew-text">
-                                                Let’s Talk
-                                            </span>
-                                            <span class="kew-arrow">
-                                                <div class="kt-one">
-                                                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M14.5625 10.9336L23.1446 11.1277L22.9504 19.7098" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path d="M10.8516 22.875L23.0183 11.2466" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </svg>                                    
-                                                </div>
-                                                <div class="kt-two">
-                                                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M14.5625 10.9336L23.1446 11.1277L22.9504 19.7098" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path d="M10.8516 22.875L23.0183 11.2466" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </svg>                                    
-                                                </div>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </header>
+        {% include "include/header.html" %}
         <!--Header End-->
 
         <!--Section Title-->
@@ -195,12 +104,12 @@
                                 </span>
                             </h4>
                             <div class="band-icon band-border1 mb-xxl-10 mb-7">
-                                <img src="assets/images/global/ui.png" alt="img">
+                                <img src="{% static 'assets/images/global/ui.png' %}" alt="img">
                             </div>
                             <p>
                                 Welcome to our UI/UX Design Showcase, where creativity meets functionality. Dive world where user experience is paramount, and portfolio and witness the art of user-centric design that elevates digital experiences to new heights.
                             </p>
-                            <img src="assets/images/global/sbig1.png" alt="img" class="s-shape2">
+                            <img src="{% static 'assets/images/global/sbig1.png' %}" alt="img" class="s-shape2">
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6" data-aos="zoom-in-up" data-aos-duration="1200">
@@ -212,12 +121,12 @@
                                 </span>
                             </h4>
                             <div class="band-icon band-border2 mb-xxl-10 mb-7">
-                                <img src="assets/images/global/markeding-icon.png" alt="img">
+                                <img src="{% static 'assets/images/global/markeding-icon.png' %}" alt="img">
                             </div>
                             <p>
                                 Unlock your brand's potential with Digital Marketing expertise. From strategic campaigns to engaging content, we navigate the digital landscape to elevate your online presence and drive meaningful connections.
                             </p>
-                            <img src="assets/images/global/sbig2.png" alt="img" class="s-shape1">
+                            <img src="{% static 'assets/images/global/sbig2.png' %}" alt="img" class="s-shape1">
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6" data-aos="zoom-in-down" data-aos-duration="1300">
@@ -229,12 +138,12 @@
                                 </span>
                             </h4>
                             <div class="band-icon band-border3 mb-xxl-10 mb-7">
-                                <img src="assets/images/global/identify.png" alt="img">
+                                <img src="{% static 'assets/images/global/identify.png' %}" alt="img">
                             </div>
                             <p>
                                 Crafting brand identities that resonate. Our Brand Identity portfolio showcases unique logos, color schemes, and style guides that leave a lasting impression, defining your brand with visual excellence.
                             </p>
-                            <img src="assets/images/global/sbig3.png" alt="img" class="s-shape2">
+                            <img src="{% static 'assets/images/global/sbig3.png' %}" alt="img" class="s-shape2">
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6" data-aos="zoom-in-up" data-aos-duration="1400">
@@ -246,12 +155,12 @@
                                 </span>
                             </h4>
                             <div class="band-icon band-border4 mb-xxl-10 mb-7">
-                                <img src="assets/images/global/web-dev.png" alt="img">
+                                <img src="{% static 'assets/images/global/web-dev.png' %}" alt="img">
                             </div>
                             <p>
                                 Elevate your online presence with Web Development expertise. portfolio showcases visually stunning and functionally robust websites, meticulously crafted captivate audiences and drive digital success.
                             </p>
-                            <img src="assets/images/global/sbig4.png" alt="img" class="s-shape2">
+                            <img src="{% static 'assets/images/global/sbig4.png' %}" alt="img" class="s-shape2">
                         </div>
                     </div>
                 </div>
@@ -268,7 +177,7 @@
                                             <path d="M12.7188 5L18.0188 11.5833C21.5688 15.9833 24.0854 21.1 25.4188 26.5833L27.4354 34.9" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>                                                                                                        
                                         <span class="shape-icon">
-                                            <img src="assets/images/global/social-hover.png" alt="img">
+                                            <img src="{% static 'assets/images/global/social-hover.png' %}" alt="img">
                                         </span>                                                        
                                     </a>
                                 </li>
@@ -280,7 +189,7 @@
                                             <path d="M29.3961 11.6654H29.4154" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>                                                               
                                         <span class="shape-icon">
-                                            <img src="assets/images/global/social-hover.png" alt="img">
+                                            <img src="{% static 'assets/images/global/social-hover.png' %}" alt="img">
                                         </span>                                                        
                                     </a>
                                 </li>
@@ -305,7 +214,7 @@
                     </div>
                     <div class="col-lg-6 order-first order-lg-0" data-aos="zoom-in-down" data-aos-duration="1400">
                         <div class="cmn-box about-education-box h-100 py-xxl-7 py-xl-8 py-lg-8 py-5 px-xxl-8 px-xl-6 px-lg-4 px-6">
-                            <img src="assets/images/global/ring2.png" alt="img" class="s-shape2">
+                            <img src="{% static 'assets/images/global/ring2.png' %}" alt="img" class="s-shape2">
                             <h5 class="fw_500 n0-color mb-10">
                                 Education
                             </h5>
@@ -359,61 +268,26 @@
         <!--body box-->
 
         <!--Footer Here-->
-        <footer class="footer position-relative py-xxl-8 py-6">
-            <div class="container">
-                <div class="footer-wrap d-grid gap-4 justify-content-center d-lg-flex align-items-center justify-content-lg-between">
-                    <div class="footer-copyright">
-                        <span class="fw_400 n0-color">
-                            Copyright &copy; 2024 <a href="index.html" class="bento-tag">BentoX</a>
-                        </span>
-                        <span class="fw_400 n0-color designed-by">
-                            Designed By <a href="https://themeforest.net/user/pixelaxis" class="s1-color">Pixelaxis</a>
-                        </span>
-                    </div>
-                    <ul class="footer-link justify-content-center flex-wrap position-relative cus-z1">
-                        <li>
-                            <a href="index.html">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="about.html">
-                                About
-                            </a>
-                        </li>
-                        <li>
-                            <a href="project.html">
-                                Works
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact.html">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
+        {% include "include/footer.html" %}
         <!--Footer End-->
 
     </main>
     <!-- ==== Common Body End ==== -->
 
     <!-- ==== js Jquery start ==== -->
-    <script src="assets/js/plugins/jquery.js"></script>
+    <script src="{% static 'assets/js/plugins/jquery.js' %}"></script>
     <!-- ==== js Bootstrap start ==== -->
-    <script src="assets/js/plugins/bootstrap.js"></script>
+    <script src="{% static 'assets/js/plugins/bootstrap.js' %}"></script>
     <!-- ==== js Aos Animation start ==== -->
-    <script src="assets/js/plugins/aos.js"></script>
+    <script src="{% static 'assets/js/plugins/aos.js' %}"></script>
     <!-- ==== js Magnificpopup start ==== -->
-    <script src="assets/js/plugins/magnific-popup.js"></script>
+    <script src="{% static 'assets/js/plugins/magnific-popup.js' %}"></script>
     <!-- ==== js Swiper start ==== -->
-    <script src="assets/js/plugins/swiper.js"></script>
+    <script src="{% static 'assets/js/plugins/swiper.js' %}"></script>
     <!-- ==== js Odometer start ==== -->
-    <script src="assets/js/plugins/odometer.js"></script>
+    <script src="{% static 'assets/js/plugins/odometer.js' %}"></script>
     <!-- ==== js Mian start ==== -->
-    <script src="assets/js/main.js"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
 
 </body>
 

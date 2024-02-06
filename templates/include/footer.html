@@ -4,7 +4,7 @@
         <div class="footer-wrap d-grid gap-4 justify-content-center d-lg-flex align-items-center justify-content-lg-between">
             <div class="footer-copyright">
                 <span class="fw_400 n0-color">
-                    Copyright &copy; 2024 <a href="index.html" class="bento-tag">BentoX</a>
+                    Copyright &copy; 2024 <a href="{% url 'index' %}" class="bento-tag">BentoX</a>
                 </span>
                 <span class="fw_400 n0-color designed-by">
                     Designed By <a href="https://themeforest.net/user/pixelaxis" class="s1-color">Pixelaxis</a>
@@ -22,12 +22,12 @@
                     </a>
                 </li>
                 <li>
-                    <a href="project.html">
+                    <a href="{% url 'project' %}">
                         Works
                     </a>
                 </li>
                 <li>
-                    <a href="contact.html">
+                    <a href="{% url 'contact' %}">
                         Contact
                     </a>
                 </li>

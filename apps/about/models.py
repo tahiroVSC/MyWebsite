@@ -30,5 +30,5 @@ class About(models.Model):
             return self.name
     
     class Meta:
-          verbose_name = "Настройки страницы обо мне"    
-          verbose_name = "Настройка страницы обо мне"
+          verbose_name = "Базовые настройки"    
+          verbose_name_plural = "Базавая настройка"
