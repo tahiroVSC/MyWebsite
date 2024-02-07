@@ -7,6 +7,10 @@ class About(models.Model):
         upload_to="images",
         verbose_name= "Фотография"
     )
+    title = models.CharField(
+        max_length = 255,
+        verbose_name = "Язык програмиравание"
+    )
     name = models.CharField(
         max_length = 255,
         verbose_name = "ФИО"
@@ -32,3 +36,38 @@ class About(models.Model):
     class Meta:
           verbose_name = "Базовые настройки"    
           verbose_name_plural = "Базавая настройка"
+
+class Skills(models.Model):
+      title = models.CharField(
+        max_length = 255,
+        verbose_name = "Скиллы"
+    )
+      def __str__(self):
+            return self.title
+    
+      class Meta:
+          verbose_name = "Настройки скиллов"    
+          verbose_name_plural = "Настройка склиллов"
+
+class Path(models.Model):
+    year1 = models.IntegerField(
+        verbose_name = "Год"
+    )
+    year2 = models.CharField(
+        max_length = 255,
+        verbose_name = "Год2"
+    )
+    direction = models.CharField(
+        max_length = 255,
+        verbose_name = "Направление"    
+    )
+    company = models.CharField(
+        max_length = 255,
+        verbose_name = "Компания"
+    )
+    def __str__(self):
+            return self.company
+    
+    class Meta:
+          verbose_name = "Настройки Путя"    
+          verbose_name_plural = "Настройка  Путя"
