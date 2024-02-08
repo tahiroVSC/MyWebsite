@@ -275,29 +275,21 @@
                                 Education
                             </h5>
                             <div class="d-flex flex-wrap gap-4 align-items-center justify-content-between">
+                                {% for education in education %}
                                 <div class="edu-text-box">
                                     <span class="mb-3 d-block fs-seven fw_300 n06">
-                                        2015 - 2019
+                                        {{education.year1}} - {{education.year2}}
                                     </span>
                                     <span class="fs20 mb-2 d-block n0-color">
-                                        Bachelor Degree in Psychology
+                                        {{education.direction}}
                                     </span>
                                     <span class="d-block fs-seven fw_300 n06">
-                                        University of California
+                                        {{education.company}}
                                     </span>
-                                </div>
-                                <div class="edu-text-box">
-                                    <span class="mb-3 d-block fs-seven fw_300 n06">
-                                        2015 - 2019
-                                    </span>
-                                    <span class="fs20 mb-2 d-block n0-color">
-                                        Master Degree in Designing
-                                    </span>
-                                    <span class="d-block fs-seven fw_300 n06">
-                                        University of California
-                                    </span>
-                                </div>
+                                </div> 
+                                {% endfor %}                            
                             </div>
+                            
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 position-relative cus-z1" data-aos="zoom-in-down" data-aos-duration="1400">

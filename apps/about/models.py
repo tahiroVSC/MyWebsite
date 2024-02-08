@@ -71,3 +71,26 @@ class Path(models.Model):
     class Meta:
           verbose_name = "Настройки Путя"    
           verbose_name_plural = "Настройка  Путя"
+
+class Education(models.Model):
+    year1 = models.IntegerField(
+        verbose_name = "Год1"
+    )
+    year2 = models.IntegerField(
+        verbose_name = "Год2"
+    )
+    direction = models.CharField(
+        max_length = 255,
+        verbose_name = "Направлние"
+    )
+    company = models.CharField(
+        max_length = 255,
+        verbose_name = "Обучение"
+    )
+    def __str__(self):
+            return self.company
+    
+    class Meta:
+          verbose_name = "Настройки Оброзавания"    
+          verbose_name_plural = "Настройка Оброзавания"
+
