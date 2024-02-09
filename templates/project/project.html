@@ -98,42 +98,26 @@
                     <div class="row g-xxl-6 g-4">
                         <div class="col-lg-6 col-md-6">
                             <div class="row g-xxl-6 g-4">
+                                {% for small in small %}
                                 <div class="col-lg-12" data-aos="zoom-in-up" data-aos-duration="1000">
                                     <a href="project-details.html" class="all-proitem">
-                                        <img src="{% static 'assets/images/gallery/gs1.png' %}" alt="img" class="widing">
+                                        <img src="{{small.image.url}}" alt="img" class="widing">
                                         <span class="aroha-boxwrap d-flex align-items-center justify-content-between">
                                             <span class="aroha-box">
                                                 <span class="n0-color fs-four mb-xxl-3 mb-2 fw_500">
-                                                    Aroha agency website
+                                                    {{small.title}}
                                                 </span>
                                                 <span class="fs-six ptextes fw_300 n0-color">
-                                                    An 12 month long inquiry into italine design,history and culture.
+                                                    {{small.desription|truncatechars:50}}
                                                 </span>
                                             </span>
                                             <span class="arrow">
-                                                <img src="{% static 'assets/images/global/culture.png' %}" alt="img">
+                                                <img src="{{small.image.url}}" alt="img">
                                             </span>
                                         </span>
                                     </a>
                                 </div>
-                                <div class="col-lg-12" data-aos="zoom-in-down" data-aos-duration="1000">
-                                    <a href="project-details.html" class="all-proitem">
-                                        <img src="{% static 'assets/images/gallery/gs3.png' %}" alt="img" class="widing">
-                                        <span class="aroha-boxwrap d-flex align-items-center justify-content-between">
-                                            <span class="aroha-box">
-                                                <span class="n0-color fs-four mb-xxl-3 mb-2 fw_500">
-                                                    Unique Screen website
-                                                </span>
-                                                <span class="fs-six ptextes fw_300 n0-color">
-                                                    An 12 month long inquiry into italine design,history and culture.
-                                                </span>
-                                            </span>
-                                            <span class="arrow">
-                                                <img src="{% static 'assets/images/global/culture.png' %}" alt="img">
-                                            </span>
-                                        </span>
-                                    </a>
-                                </div>
+                                {% endfor %}
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
