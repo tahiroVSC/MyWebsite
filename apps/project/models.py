@@ -74,5 +74,5 @@ class SquareBanner(models.Model):
         return self.title
     
     class Meta:
-        verbose_name = "Длинный баннер"
-        verbose_name_plural = "Длинный баннер"
+        verbose_name = "квадратный баннер"
+        verbose_name_plural = "квадратный баннер"
