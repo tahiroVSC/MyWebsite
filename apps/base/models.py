@@ -38,8 +38,8 @@ class Index(models.Model):
         return self.title
     
     class Meta:
-        verbose_name = "Базовые настройки"
-        verbose_name_plural = "Базавая настройка"
+        verbose_name = "База "
+        verbose_name_plural = "База"
 
 
 class Slide(models.Model):
@@ -51,5 +51,19 @@ class Slide(models.Model):
         return self.libary
     
     class Meta:
-        verbose_name = "Настройки Слайда"
-        verbose_name_plural = "Настройка Слайда"
+        verbose_name = " Слайд"
+        verbose_name_plural = "Слайд"
+
+
+class ServicesOffering(models.Model):
+    image = models.ImageField(
+        upload_to="images",
+        verbose_name="Фогорафия"
+    )
+    title = models.CharField(
+        max_length = 255,
+        verbose_name  ="Название"
+    )
+    class Meta:
+        verbose_name = "Предложение услуг"
+        verbose_name_plural = "Предложение услуг"

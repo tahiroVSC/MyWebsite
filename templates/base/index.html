@@ -201,46 +201,18 @@
                                             Services Offering
                                         </span>
                                         <ul class="ordering-brand d-flex justify-content-between gap-3 mb-11">
+                                            {% for servicesoffering in servicesoffering %}
                                             <li>
                                                 <a href="{% url 'offering' %}" class="text-center">
                                                     <span class="text-center d-block">
-                                                        <img src="{% static 'assets/images/global/ui.png' %}" alt="ui-img">
+                                                        <img src="{{servicesoffering.image.url}}" alt="ui-img">
                                                     </span>
                                                     <span class="mt-5 ser-offeringopa d-block">
-                                                        UI/UX Design
+                                                        {{servicesoffering.title}}
                                                     </span>
                                                 </a>
                                             </li>
-                                            <li>
-                                                <a href="{% url 'offering' %}" class="text-center">
-                                                    <span class="text-center d-block">
-                                                        <img src="{% static 'assets/images/global/digital.png' %}" alt="ui-img">
-                                                    </span>
-                                                    <span class="mt-5 ser-offeringopa d-block">
-                                                        Digital Marketing
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="{% url 'offering' %}" class="text-center">
-                                                    <span class="text-center d-block">
-                                                        <img src="{% static 'assets/images/global/brand.png' %}" alt="ui-img">
-                                                    </span>
-                                                    <span class="mt-5 ser-offeringopa d-block">
-                                                        Brand Identity
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="{% url 'offering' %}" class="text-center">
-                                                    <span class="text-center d-block">
-                                                        <img src="{% static 'assets/images/global/web.png' %}" alt="ui-img">
-                                                    </span>
-                                                    <span class="mt-5 ser-offeringopa d-block">
-                                                        Web Development
-                                                    </span>
-                                                </a>
-                                            </li>
+                                            {% endfor %}
                                         </ul>
                                         <a href="{% url 'offering' %}" class="d-flex align-items-center gap-xxl-3 gap-1">
                                             <span class="goodthingking">
