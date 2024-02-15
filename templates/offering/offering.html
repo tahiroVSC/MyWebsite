@@ -95,74 +95,25 @@
         <section class="body-box position-relative cus-z-1 pb-xxl-20 pb-xl-15 pb-lg-10 pb-9">
             <div class="container">
                 <div class="row g-xxl-6 g-4 mb-xxl-6 mb-4">
+                    {% for offernig in offernig%}
                     <div class="col-lg-6 col-md-6" data-aos="zoom-in-down" data-aos-duration="1000">
                         <div class="orffering-serbox cmn-box py-xxl-15 py-lg-8 py-7 px-xxl-15 px-lg-8 px-lg-7 px-5">
                             <h4 class="n0-color mb-xxl-10 mb-7">
-                                UI/UX
+                                {{offernig.title}}
                                 <span class="ms-10 d-block">
-                                    Design
+                                    {{offernig.title2}}
                                 </span>
                             </h4>
                             <div class="band-icon band-border1 mb-xxl-10 mb-7">
-                                <img src="{% static 'assets/images/global/ui.png' %}" alt="img">
+                                <img src="{{offernig.image.url}}" alt="img">
                             </div>
                             <p>
-                                Welcome to our UI/UX Design Showcase, where creativity meets functionality. Dive world where user experience is paramount, and portfolio and witness the art of user-centric design that elevates digital experiences to new heights.
+                                {{offernig.description}}
                             </p>
                             <img src="{% static 'assets/images/global/sbig1.png' %}" alt="img" class="s-shape2">
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6" data-aos="zoom-in-up" data-aos-duration="1200">
-                        <div class="orffering-serbox cmn-box py-xxl-15 py-lg-8 py-7 px-xxl-15 px-lg-8 px-lg-7 px-5">
-                            <h4 class="n0-color mb-xxl-10 mb-7">
-                                Digital
-                                <span class="ms-10 d-block">
-                                    Marketing
-                                </span>
-                            </h4>
-                            <div class="band-icon band-border2 mb-xxl-10 mb-7">
-                                <img src="{% static 'assets/images/global/markeding-icon.png' %}" alt="img">
-                            </div>
-                            <p>
-                                Unlock your brand's potential with Digital Marketing expertise. From strategic campaigns to engaging content, we navigate the digital landscape to elevate your online presence and drive meaningful connections.
-                            </p>
-                            <img src="{% static 'assets/images/global/sbig2.png' %}" alt="img" class="s-shape1">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6" data-aos="zoom-in-down" data-aos-duration="1300">
-                        <div class="orffering-serbox cmn-box py-xxl-15 py-lg-8 py-7 px-xxl-15 px-lg-8 px-lg-7 px-5">
-                            <h4 class="n0-color mb-xxl-10 mb-7">
-                                Brand
-                                <span class="ms-10 d-block">
-                                    Identity
-                                </span>
-                            </h4>
-                            <div class="band-icon band-border3 mb-xxl-10 mb-7">
-                                <img src="{% static 'assets/images/global/identify.png' %}" alt="img">
-                            </div>
-                            <p>
-                                Crafting brand identities that resonate. Our Brand Identity portfolio showcases unique logos, color schemes, and style guides that leave a lasting impression, defining your brand with visual excellence.
-                            </p>
-                            <img src="{% static 'assets/images/global/sbig3.png' %}" alt="img" class="s-shape2">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6" data-aos="zoom-in-up" data-aos-duration="1400">
-                        <div class="orffering-serbox cmn-box py-xxl-15 py-lg-8 py-7 px-xxl-15 px-lg-8 px-lg-7 px-5">
-                            <h4 class="n0-color mb-xxl-10 mb-7">
-                                Wed
-                                <span class="ms-10 d-block">
-                                    Development
-                                </span>
-                            </h4>
-                            <div class="band-icon band-border4 mb-xxl-10 mb-7">
-                                <img src="{% static 'assets/images/global/web-dev.png' %}" alt="img">
-                            </div>
-                            <p>
-                                Elevate your online presence with Web Development expertise. portfolio showcases visually stunning and functionally robust websites, meticulously crafted captivate audiences and drive digital success.
-                            </p>
-                            <img src="{% static 'assets/images/global/sbig4.png' %}" alt="img" class="s-shape2">
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
                 <div class="row g-xxl-6 g-4">
                     <div class="col-lg-3 col-md-6" data-aos="zoom-in-down" data-aos-duration="1000">
