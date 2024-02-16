@@ -17,3 +17,4 @@ urlpatterns = [
     path('offering/', offering, name='offering'),
     path('project/', project, name='project'),
 ]
+

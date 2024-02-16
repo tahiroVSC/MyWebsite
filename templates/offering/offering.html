@@ -95,20 +95,20 @@
         <section class="body-box position-relative cus-z-1 pb-xxl-20 pb-xl-15 pb-lg-10 pb-9">
             <div class="container">
                 <div class="row g-xxl-6 g-4 mb-xxl-6 mb-4">
-                    {% for offernig in offernig%}
+                    {% for offering in offering%}
                     <div class="col-lg-6 col-md-6" data-aos="zoom-in-down" data-aos-duration="1000">
                         <div class="orffering-serbox cmn-box py-xxl-15 py-lg-8 py-7 px-xxl-15 px-lg-8 px-lg-7 px-5">
                             <h4 class="n0-color mb-xxl-10 mb-7">
-                                {{offernig.title}}
+                                {{offering.title}}
                                 <span class="ms-10 d-block">
-                                    {{offernig.title2}}
+                                    {{offering.title2}}
                                 </span>
                             </h4>
                             <div class="band-icon band-border1 mb-xxl-10 mb-7">
-                                <img src="{{offernig.image.url}}" alt="img">
+                                <img src="{{offering.image.url}}" alt="img">
                             </div>
                             <p>
-                                {{offernig.description}}
+                                {{offering.description}}
                             </p>
                             <img src="{% static 'assets/images/global/sbig1.png' %}" alt="img" class="s-shape2">
                         </div>

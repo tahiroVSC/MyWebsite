@@ -159,41 +159,41 @@
                     </div>
                     <div class="col-xxl-9 col-xl-9 col-lg-8">
                         <div class="contact-form cmn-box py-xxl-15 py-lg-8 py-6 px-xxl-15 px-lg-8 px-6">
-                            <form action="#" method='POST'> 
+                            <form  method='POST'> 
                             {% csrf_token %}
                                 <div class="row g-xxl-6 g-4">
                                     <div class="col-lg-6" data-aos="zoom-in-up" data-aos-duration="1000">
                                         <div class="contact-cmnitem">
                                             <label for="nam" class="fs20 fw_300 n0-color mb-xxl-3 mb-2">Name</label>
-                                            <input type="text" id="nam" placeholder="Your name">
+                                            <input type="text" name='name' id="nam" placeholder="Your name">
                                         </div>
                                     </div>
                                     <div class="col-lg-6" data-aos="zoom-in-up" data-aos-duration="1100">
                                         <div class="contact-cmnitem">
                                             <label for="eml" class="fs20 fw_300 n0-color mb-xxl-3 mb-2">Email</label>
-                                            <input type="text" id="eml" placeholder="Your email">
-                                        </div>
+                                            <input type="text" name="email" id="eml" placeholder="Your email">
+                                        </div>  
                                     </div>
                                     <div class="col-lg-6" data-aos="zoom-in-up" data-aos-duration="1200">
                                         <div class="contact-cmnitem">
                                             <label for="phs" class="fs20 fw_300 n0-color mb-xxl-3 mb-2">Phone (Optional)</label>
-                                            <input type="text" id="phs" placeholder="Your phone">
+                                            <input type="text" name="phone"id="phs" placeholder="Your phone">
                                         </div>
                                     </div>
                                     <div class="col-lg-6" data-aos="zoom-in-up" data-aos-duration="1300">
                                         <div class="contact-cmnitem">
                                             <label for="subs" class="fs20 fw_300 n0-color mb-xxl-3 mb-2">Subject</label>
-                                            <input type="text" id="subs" placeholder="Your subject">
+                                            <input type="text" name="subject" id="subs" placeholder="Your subject">
                                         </div>
                                     </div>
                                     <div class="col-lg-12" data-aos="zoom-in-up" data-aos-duration="1400">
                                         <div class="contact-cmnitem">
                                             <label for="subs" class="fs20 fw_300 n0-color mb-xxl-3 mb-2">Message</label>
-                                            <textarea name="mesg" rows="5" placeholder="Type your message..."></textarea>
+                                            <textarea name="message" rows="5" placeholder="Type your message..."></textarea>
                                         </div>
                                     </div>
                                     <div class="sub-btn">
-                                        <button type="button" class="kewta-btn d-inline-flex align-items-center" data-aos="zoom-in-up" data-aos-duration="1000">
+                                        <button type="submit" class="kewta-btn d-inline-flex align-items-center" data-aos="zoom-in-up" data-aos-duration="1000">
                                             <span class="kew-text">
                                                 Submit Now
                                             </span>
